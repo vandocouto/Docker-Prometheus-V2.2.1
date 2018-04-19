@@ -64,6 +64,8 @@ scrape_configs:
 * O **rule_files** específica a localização de qualquer regras que queremos que o servidor Prometheus carregue
 * O **scrape_configs** controla quais os recursos o Prometheus monitora
 
+---
+
 * Como o Prometheus também expõe dados sobre si mesmo como um endpoint HTTP, ele pode rastrear e monitorar sua própria saúde 
 * Na configuração padrão, existe um único Job, chamado prometheus, que coleta os dados em tempo real expostos pelo servidor Prometheus
 * O Job contém um único destino estaticamente configurado, o localhost na porta 9090
