@@ -146,6 +146,5 @@ cd node_exporter-*
 * Se quiser substituir o nome (node) pelo endereço IP é possível também
 
 
-
-
+Fonte: https://prometheus.io/docs/
 
