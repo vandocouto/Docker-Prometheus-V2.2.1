@@ -12,10 +12,13 @@ docker volume create --name=prometheus
 docker-compose up -d
 ```
 
+Alerta recebido no canal General do Slack
 ![Alerta - Slack](imgs/alert-slack.png)
 
+Alerta recebido no email (Relay configurado para o prometheus)
 ![Alerta - Email](imgs/alertmanager-email.png)
 
+Alerta recebido no http://alertmanager:9093
 ![Alerta - Web](imgs/alertmanager-web.png)
 
 
