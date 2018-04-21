@@ -14,10 +14,23 @@ alerting:
       - alertmanager:9093
 
 scrape_configs:
+
   - job_name: prometheus_server
     static_configs:
       - targets: ['0.0.0.0:9090']
 
-  - job_name: instance_1
+  - job_name: instance1
+    static_configs: 
+      - targets: ['192.168.3.53:9100']
+
+  - job_name: instance1_docker_engine
+    static_configs:
+     - targets: ['192.168.3.53:9323'] 
+
+  - job_name: instance_2
     static_configs:
       - targets: ['192.168.3.97:9100']
+
+  - job_name: instance_2_docker_engine
+    static_configs:
+      - targets: ['192.168.3.97:9323']

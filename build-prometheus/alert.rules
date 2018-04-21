@@ -6,12 +6,12 @@ groups:
 
    - alert: uptime
      expr: up == 0
-     for: 1m
+     for: 30s
      labels:
       severity: "critical"
      annotations:
-      summary: "Instance {{ $labels.instance }} down"
-      description: "{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 1 minutes."
+      summary: "INSTANCE CRITICAL - {{ $labels.instance }} down"
+      description: "{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 30 seconds"
 
 - name: cpu
 
@@ -19,29 +19,29 @@ groups:
 
    - alert: cpu_load_1
      expr: node_load1 > 5
-     for: 1s
+     for: 30s
      labels:
       serveriy: "attention"
      annotations:
-      summary: "HIGH LOAD AVERAGE WARNING ON '{{ $labels.instance }}'"
+      summary: "HIGH LOAD AVERAGE ATTENTION ON - '{{ $labels.instance }}'"
       description: "{{ $labels.instance }} has a high load average. Load Average 5m is {{ humanize $value}}."
 
    - alert: cpu_load_5
      expr: node_load5 > 15
-     for: 1s
+     for: 30s
      labels:
       serveriy: "warning"
      annotations:
-      summary: "HIGH LOAD AVERAGE WARNING ON '{{ $labels.instance }}'"
+      summary: "HIGH LOAD AVERAGE WARNING ON - '{{ $labels.instance }}'"
       description: "{{ $labels.instance }} has a high load average. Load Average 5m is {{ humanize $value}}."
 
    - alert: cpu_load_15
      expr: node_load15 > 30
-     for: 1s
+     for: 30s
      labels:
       serveriy: "critical"
      annotations:
-      summary: "HIGH LOAD AVERAGE WARNING ON '{{ $labels.instance }}'"
+      summary: "HIGH LOAD AVERAGE CRITICAL ON - '{{ $labels.instance }}'"
       description: "{{ $labels.instance }} has a high load average. Load Average 5m is {{ humanize $value}}."
 
 
