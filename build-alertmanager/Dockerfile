@@ -24,3 +24,5 @@ RUN curl -LO https://github.com/prometheus/alertmanager/releases/download/v${AVE
 
 COPY build-alertmanager/alertmanager.yml 	/etc/prometheus/
 COPY build-alertmanager/run.sh			/etc/prometheus/
+COPY build-alertmanager/email.html		/etc/prometheus/
+COPY build-alertmanager/default.tmpl		/etc/prometheus/

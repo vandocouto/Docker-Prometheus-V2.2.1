@@ -34,7 +34,9 @@ receivers:
 - name: 'slack-alert'
   slack_configs:
   - send_resolved: true
-    text: "text"
     username: USERNAME
     channel: CHANNEL
     text: '{{ .GroupLabels.app }}/{{ .GroupLabels.alertname }}'
+
+templates:
+- '/etc/prometheus/default.tmpl'
