@@ -14,12 +14,6 @@ route:
 
  routes:
  - match:
-    severity: attention
-   group_by: [cpu]
-   receiver: 'slack-alert'
-
- routes:
- - match:
     severity: warning
    group_by: [cpu]
    receiver: 'slack-alert'

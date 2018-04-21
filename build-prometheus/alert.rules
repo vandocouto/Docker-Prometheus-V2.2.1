@@ -21,7 +21,7 @@ groups:
      expr: node_load1 > 5
      for: 30s
      labels:
-      serveriy: "attention"
+      serveriy: "warning"
      annotations:
       summary: "HIGH LOAD AVERAGE ATTENTION ON - '{{ $labels.instance }}'"
       description: "{{ $labels.instance }} has a high load average. Load Average 5m is {{ humanize $value}}."
