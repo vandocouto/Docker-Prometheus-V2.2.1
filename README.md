@@ -24,5 +24,10 @@ docker-compose up -d
 
 ![Alerta - Web](imgs/alertmanager-web.png)
 
+**Gráfico CPU LOAD**
+
+![Alerta - Web](imgs/grafico-load1.png)
+
+
 
 
