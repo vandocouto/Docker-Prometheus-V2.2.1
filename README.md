@@ -11,3 +11,12 @@ docker volume create --name=prometheus
 ```bash
 docker-compose up -d
 ```
+
+![Alerta - Slack](imgs/alert-slack.png)
+
+![Alerta - Email](imgs/alertmanager-email.png)
+
+![Alerta - Web](imgs/alertmanager-web.png)
+
+
+
