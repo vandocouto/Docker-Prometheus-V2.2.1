@@ -1,9 +1,12 @@
 FROM ubuntu:16.04
 ENV AVERSION ${AVERSION:-0.15.0-rc.1}
 
-RUN apt-get update && apt-get install -y curl zip unzip iputils-ping telnet net-tools && \
+RUN apt-get update && apt-get install -y tzdata curl zip unzip iputils-ping telnet net-tools && \
     mkdir /var/run/sshd && \
     rm -rf /var/lib/apt/lists/*
+
+RUN rm /etc/localtime && \
+    ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime 
 
 RUN useradd --no-create-home --shell /bin/false prometheus && \
     useradd --no-create-home --shell /bin/false node_exporter

@@ -14,6 +14,12 @@ route:
 
  routes:
  - match:
+    severity: attention
+   group_by: [cpu]
+   receiver: 'slack-alert'
+
+ routes:
+ - match:
     severity: warning
    group_by: [cpu]
    receiver: 'slack-alert'
@@ -36,7 +42,7 @@ receivers:
   - send_resolved: true
     username: USERNAME
     channel: CHANNEL
-    text: '{{ .GroupLabels.app }}/{{ .GroupLabels.alertname }}'
+    text: '{{range .Alerts}}{{.Annotations.DESCRIPTION}}'
 
 templates:
 - '/etc/prometheus/default.tmpl'
