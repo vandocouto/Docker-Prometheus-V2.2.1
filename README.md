@@ -12,6 +12,14 @@ docker volume create --name=prometheus
 docker-compose up -d
 ```
 
+### Gráficos
+
+**Gráfico CPU LOAD**
+
+![Alerta - Web](imgs/grafico-load1.png)
+
+### Alertas
+
 **Alerta recebido no canal General do Slack**
 
 ![Alerta - Slack](imgs/alert-slack.png)
