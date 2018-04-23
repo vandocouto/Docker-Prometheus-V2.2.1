@@ -30,6 +30,26 @@ Levantando os containers:
 docker-compose up -d
 ```
 
+### Estrutura
+
+```bash
+tree
+.
+├── build-alertmanager
+│   ├── alertmanager.yml
+│   ├── default.tmpl
+│   ├── Dockerfile
+│   ├── email.html
+│   └── run.sh
+├── build-prometheus
+│   ├── alert.rules
+│   ├── Dockerfile
+│   └── prometheus.yml
+├── docker-compose.yml
+└── README.md
+```
+
+
 ### Gráficos
 
 **Gráfico CPU LOAD**
