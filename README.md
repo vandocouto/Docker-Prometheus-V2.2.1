@@ -1,10 +1,13 @@
 
+# Resumo teórico:
+
 * [Primeiros passos](https://github.com/vandocouto/Docker-Prometheus-V2.2.1/blob/master/pages/Prometheus-Basic.md)
 * [Conceitos Básicos](https://github.com/vandocouto/Docker-Prometheus-V2.2.1/blob/master/pages/Prometheus-Conceito.md)
 * [Configuração](https://github.com/vandocouto/Docker-Prometheus-V2.2.1/blob/master/pages/Prometheus-Configura%C3%A7%C3%A3o.md)
 * [Armazenamento Storage](https://github.com/vandocouto/Docker-Prometheus-V2.2.1/blob/master/pages/Prometheus-Armazenamento.md)
 * [Alertas](https://github.com/vandocouto/Docker-Prometheus-V2.2.1/blob/master/pages/Prometheus-Alert.md)
 
+# Construindo o servidor Prometheus
 
 ```bash
 docker build -f build-prometheus/Dockerfile -t prometheus:latest .
