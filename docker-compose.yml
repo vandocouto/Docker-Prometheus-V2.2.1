@@ -10,7 +10,7 @@ services:
     - "9090:9090"
    volumes:
     - prometheus:/etc/prometheus/data
-   hostname: prometheus.d2d.com.br
+   hostname: prometheus
    container_name: prometheus
    restart: always
    logging:
@@ -26,7 +26,7 @@ services:
    privileged: true
    ports:
     - "9093:9093"
-   hostname: alertmanager.d2d.com.br
+   hostname: alertmanager
    container_name: alertmanager
    restart: always
    logging:
