@@ -9,6 +9,9 @@
 
 # Construindo o servidor Prometheus:
 
+![Alerta - Web](imgs/prometheus.png)
+
+
 * Necessário que tenha conhecimento básicos de Docker Engine e Docker Compose.
 
 Baixando o projeto:
