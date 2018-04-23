@@ -33,8 +33,6 @@ docker-compose up -d
 ### Estrutura
 
 ```bash
-tree
-.
 ├── build-alertmanager
 │   ├── alertmanager.yml
 │   ├── default.tmpl
