@@ -1,4 +1,4 @@
-# Armazenament
+# Armazenamento (Storage)
 
 * O Prometheus inclui um banco de dados de time series em disco local, mas também se integra opcionalmente a sistemas de armazenamento remoto
 
@@ -18,7 +18,7 @@
 * O Prometheus pode escrever amostras que são armazenadas em um URL remoto em um formato padronizado
 * O Prometheus pode ler (voltar) amostras de dados de um URL remoto em um formato padronizado
 
-![Remote Storage](imgs/remote_integrations.png)
+![Remote Storage](../imgs/remote_integrations.png)
 
 
 Fonte: https://prometheus.io/docs/prometheus/latest/storage/
