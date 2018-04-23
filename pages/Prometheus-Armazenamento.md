@@ -18,7 +18,7 @@
 * O Prometheus pode escrever amostras que são armazenadas em um URL remoto em um formato padronizado
 * O Prometheus pode ler (voltar) amostras de dados de um URL remoto em um formato padronizado
 
-![Alerta - Slack](imgs/remote_integrations.png)
+![Remote Storage](imgs/remote_integrations.png)
 
 
 Fonte: https://prometheus.io/docs/prometheus/latest/storage/
