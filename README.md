@@ -7,17 +7,25 @@
 * [Armazenamento Storage](https://github.com/vandocouto/Docker-Prometheus-V2.2.1/blob/master/pages/Prometheus-Armazenamento.md)
 * [Alertas](https://github.com/vandocouto/Docker-Prometheus-V2.2.1/blob/master/pages/Prometheus-Alert.md)
 
-# Construindo o servidor Prometheus
+# Construindo o servidor Prometheus:
 
+* Necessário que tenha conhecimento básicos de Docker Engine e Docker Compose.
+
+Baixando o projeto:
+```bash
+git clone https://github.com/vandocouto/Docker-Prometheus-V2.2.1.git
+cd Docker-Prometheus-V2.2.1
+```
+Construindo as imagens:
 ```bash
 docker build -f build-prometheus/Dockerfile -t prometheus:latest .
 docker build -f build-alertmanager/Dockerfile -t alertmanager:latest .
 ```
-
+Criando o volume (storage)
 ```bash
 docker volume create --name=prometheus
 ```
-
+Levantando os containers:
 ```bash
 docker-compose up -d
 ```
