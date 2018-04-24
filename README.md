@@ -47,6 +47,7 @@ docker-compose up -d
 │   ├── Dockerfile
 │   └── prometheus.yml
 ├── docker-compose.yml
+├── environment.env
 └── README.md
 ```
 
@@ -71,10 +72,4 @@ docker-compose up -d
 
 ![Alerta - Web](imgs/alertmanager-web.png)
 
-**Gráfico CPU LOAD**
-
-![Alerta - Web](imgs/grafico-load1.png)
-
 Fonte: https://prometheus.io/docs/alerting/clients/
-
-
