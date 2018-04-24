@@ -72,4 +72,4 @@ docker-compose up -d
 
 ![Alerta - Web](imgs/alertmanager-web.png)
 
-Fonte: https://prometheus.io/docs/alerting/clients/
+Fonte: https://prometheus.io/docs/
